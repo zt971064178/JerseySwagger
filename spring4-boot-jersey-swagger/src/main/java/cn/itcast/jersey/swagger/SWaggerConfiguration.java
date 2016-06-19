@@ -2,6 +2,7 @@ package cn.itcast.jersey.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.async.DeferredResult;
 
 import springfox.documentation.service.ApiInfo;
@@ -20,7 +21,7 @@ public class SWaggerConfiguration {
 		return new Docket(DocumentationType.SWAGGER_2) 
 					.groupName("server") 
 					.genericModelSubstitutes(DeferredResult.class) 
-					// .genericModelSubstitutes(ResponseEntity.class) 
+					//.genericModelSubstitutes(ResponseEntity.class) 
 					.useDefaultResponseMessages(false) 
 					.forCodeGeneration(true)// api测试请求地址 
 					.pathMapping("/")// base，最终调用接口后会和paths拼接在一起 
