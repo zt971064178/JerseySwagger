@@ -16,10 +16,6 @@
   </parent> 
   
   <dependencies>
-  	<dependency> 
-	    <groupId>org.springframework.boot</groupId> 
-	    <artifactId>spring-boot-starter-web</artifactId> 
-	</dependency>
   	<!-- 引入Jeresy发布restful风格的服务 -->
 	<dependency> 
 		<groupId>org.springframework.boot</groupId> 
