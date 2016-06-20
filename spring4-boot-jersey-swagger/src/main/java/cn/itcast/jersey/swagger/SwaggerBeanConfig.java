@@ -14,7 +14,14 @@ import io.swagger.models.Info;
 
 @Configuration
 public class SwaggerBeanConfig extends Application {
-
+	/**
+	 * 访问方式http://127.0.0.1:8080/index.html
+	 * 实际跳转到http://127.0.0.1:8080/dist/index.html
+	 * 源码跳转：@Path("/swagger.{type:json|yaml}")
+	 * 需要修改index.html中的URL为自己的url
+	 *  // url = "http://petstore.swagger.io/v2/swagger.json";
+     *  url = "http://127.0.0.1:8080/jersey/swagger.json" ;
+	 */
 	public SwaggerBeanConfig() {
 		//######################### Swagger 配置 ########################
 		BeanConfig beanConfig = new BeanConfig();
